@@ -3,4 +3,8 @@
 América Central en el periodo de 1950-2022
 
 **Integrantes:** Silvia María Cerdas Mora e Ana Isabel Valverde Gardela
+## Dataset seleccionado:
+Datos Climáticos y Temperatura Global.
+
+## Justificación de dicha elección:
 
