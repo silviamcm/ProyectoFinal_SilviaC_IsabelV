@@ -8,3 +8,8 @@ Datos Climáticos y Temperatura Global.
 
 ## Justificación de dicha elección:
 
+## Explicar por qué ese dataset es de su interés
+
+## Mencionar qué aspectos específicos del dataset planean explorar
+La dinamica  sobre  los paises que integran America Central para la serie de tiempo  de 1950-2022, 
+considerando los dataset de las variables de temperatura máxima y mínima (°C), y precipitación (mm). 
