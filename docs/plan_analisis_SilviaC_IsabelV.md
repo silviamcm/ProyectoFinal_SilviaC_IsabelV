@@ -1,4 +1,4 @@
-#  Tema: Análisis de las variables de Precipitación y Temperaturas máximas y mínimas para la serie de tiempo de 1950-2023 para la región de América Latina.   
+#  Tema: Análisis de datos climatológicos de Precipitación y Temperatura, región de América Central en el periodo de 1950-2023.   
 ## Estudiantes: Silvia María Cerdas Mora y Ana Isabel Valverde Gardela  
 
 ## *Preguntas para responder*  
@@ -32,7 +32,7 @@ Histograma de la variable de precipitación.
 
 Gráficos de correlación entre variables y el índice  
 
-Visualización de los valores de las Anomalías de las variables. 
+Gráfico para la visualización de los valores de las Anomalías de las variables. 
 
 Dinámica de época lluviosa y seca  
 
@@ -47,8 +47,13 @@ Dinámica de época lluviosa y seca
 
 1. Índice del MEI (ENOS) 
 
-Mediante el uso de los datos del ERA5 de las variables de precipitación (mm), temperatura máxima (°C) y mínima (°C), y de los datos de la NOAA del índice del (ENOS), se lleva a cabo un análisis de estas variables en relación con los cambios evidenciados de los valores, para la serie de tiempo de 1950 a 2023.  
+Mediante el uso de los datos del ERA5 de las variables de precipitación (mm), temperatura máxima (°C) y mínima (°C) para la serie de tiempo de 1950 a 2023, y de los datos de la NOAA del Índice Multivariado de El Niño Oscilación del Sur (MEI) los caules van de 1979 al 2023, se lleva a cabo un análisis de estas variables en relación con los cambios evidenciados de los valores.  
 
-El cual, por medio de la creación de un código en Python, usando la aplicación de Visual Studio Code, se desarrollará y agregará al GitHub asociado. Dentro del código de Python se cargarán los dataset, los cuales con anterioridad fueron descargados, y revisados en Excel, con el objetivo de una mejor revisión de estos. 
+Los archivos descargados del ERA5 son en formato excel y además las columnas corresponden a las fechas, por lo cual se transpusieron los datos mediante un código de python y se convirtió a csv (se agregará a anexos), se crearon dos archivos, uno que contiene las temperaturas máximas y mínimas y otro con los datos de precipitación. Entonces ahora el archivo va contener las siguientes columnas:
+1. code: código de la estación
+2. name: nombre del lugar
+3. year: año del dato
+4. month: mes del dato
+5. temp_min, temp_max / precip
 
-Las visualizaciones serán claves para poder responder las preguntas planteadas, sin embargo, es de manera clave la búsqueda y lectura de distintos artículos científicos, con el fin de clarificar y relacionar eventos ENOS con los posibles cambios de los valores y con esto el análisis de la dinámica de América Central de las precipitaciones y temperaturas, como estas se encuentran relacionado a los agentes externos (fenómenos meteorológicos). 
+Por medio de la creación de un código en Python y usando Visual Studio Code, se va a crear un código para la visualización y graficación de los datos. Las visualizaciones serán claves para poder responder las preguntas planteadas, sin embargo, es de manera clave la búsqueda y lectura de distintos artículos científicos, con el fin de clarificar y relacionar eventos ENOS con los posibles cambios de los valores y con esto el análisis de la dinámica de América Central de las precipitaciones y temperaturas, como estas se encuentran relacionado a los agentes externos (fenómenos meteorológicos). 
