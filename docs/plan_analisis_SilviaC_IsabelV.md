@@ -23,7 +23,7 @@ Presencia de anomalías de las precipitaciones y temperaturas.
 
 ## *Visualizaciones planteadas* 
 
-Mapa de la región seleccionada implementado cartography  
+Mapa de la región seleccionada implementado cartopy  
 
 Gráfico lineal con el fin de visualizar la tendencia de la temperatura promedio anual de los 7 países en el periodo seleccionado.  
 
