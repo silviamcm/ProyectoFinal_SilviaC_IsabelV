@@ -10,6 +10,7 @@
 3. ¿Se evidencia una tendencia de aumento de la temperatura mínima en relación con la máxima?, se puede asociar al Cambio Climático? 
 
 4. ¿Cuál año presenta mayor modificación de las variables, se debió a la influencia de algún fenómeno meteorológico asociado, para la región de América Central?
+5. 
 
 
 ## *Hipótesis iniciales*
