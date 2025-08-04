@@ -1,11 +1,11 @@
-#  Tema: Análisis de las variables de Precipitación y Temperaturas máximas y mínimas para la serie de tiempo de 1950-2022 para la región de América Latina.   
+#  Tema: Análisis de las variables de Precipitación y Temperaturas máximas y mínimas para la serie de tiempo de 1950-2023 para la región de América Latina.   
 ## Estudiantes: Silvia María Cerdas Mora y Ana Isabel Valverde Gardela  
 
 ## *Preguntas para responder*  
 
 1. ¿Existe una modificación de las precipitaciones mensuales, de América Central, para el periodo seleccionado? 
 
-2. ¿Existe una modificación considerada de la temperatura sobre la región seleccionada, en el periodo de 1950 a la de 2022? 
+2. ¿Existe una modificación considerada de la temperatura sobre la región seleccionada, en el periodo de 1950 a la de 2023? 
 
 3. ¿Se evidencia una tendencia de aumento de la Temperatura mínima en relación con la máxima?, se puede asociar al Cambio Climático? 
 
@@ -47,7 +47,7 @@ Dinámica de época lluviosa y seca
 
 1. Índice del MEI (ENOS) 
 
-Mediante el uso de los datos del ERA5 de las variables de precipitación (mm), temperatura máxima (°C) y mínima (°C), y de los datos de la NOAA del índice del (ENOS), se lleva a cabo un análisis de estas variables en relación con los cambios evidenciados de los valores, para la serie de tiempo de 1950 a 2022.  
+Mediante el uso de los datos del ERA5 de las variables de precipitación (mm), temperatura máxima (°C) y mínima (°C), y de los datos de la NOAA del índice del (ENOS), se lleva a cabo un análisis de estas variables en relación con los cambios evidenciados de los valores, para la serie de tiempo de 1950 a 2023.  
 
 El cual, por medio de la creación de un código en Python, usando la aplicación de Visual Studio Code, se desarrollará y agregará al GitHub asociado. Dentro del código de Python se cargarán los dataset, los cuales con anterioridad fueron descargados, y revisados en Excel, con el objetivo de una mejor revisión de estos. 
 
