@@ -1,6 +1,6 @@
 # Proyecto Final de Curso de Python 
 **Tema:** Análisis de datos climatológicos de Precipitación y Temperatura, región de 
-América Central en el periodo de 1950-2022
+América Central en el periodo de 1950-2023
 
 **Integrantes:** Silvia María Cerdas Mora y Ana Isabel Valverde Gardela
 ## Dataset seleccionado:
