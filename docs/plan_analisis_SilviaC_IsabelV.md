@@ -10,7 +10,8 @@
 3. ¿Se evidencia una tendencia de aumento de la temperatura mínima en relación con la máxima?, se puede asociar al Cambio Climático? 
 
 4. ¿Cuál año presenta mayor modificación de las variables, se debió a la influencia de algún fenómeno meteorológico asociado, para la región de América Central?
-5. 
+
+5. ¿Cuál es la relación entre la precipitación mensual y el índice MEI en América Central para el periodo 1979-2023? ¿Qué indica la correlación sobre la influencia del ENOS en el régimen de lluvias en dicha zona?
 
 
 ## *Hipótesis iniciales*
