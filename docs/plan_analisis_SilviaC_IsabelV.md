@@ -3,11 +3,11 @@
 
 ## *Preguntas para responder*  
 
-1. ¿Existe una modificación de las precipitaciones mensuales, de América Central, para el periodo seleccionado? 
+1. ¿Existe una modificación en las precipitaciones mensuales, de América Central, para el periodo seleccionado? 
 
 2. ¿Existe una modificación considerada de la temperatura sobre la región seleccionada, en el periodo de 1950 a la de 2023? 
 
-3. ¿Se evidencia una tendencia de aumento de la Temperatura mínima en relación con la máxima?, se puede asociar al Cambio Climático? 
+3. ¿Se evidencia una tendencia de aumento de la temperatura mínima en relación con la máxima?, se puede asociar al Cambio Climático? 
 
 4. ¿Cuál año presenta mayor modificación de las variables, se debió a la influencia de algún fenómeno meteorológico asociado, para la región de América Central?
 
