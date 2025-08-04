@@ -21,9 +21,7 @@ Presencia de una correlación positiva entre el ENOS y las variables de estudio.
 
 Presencia de anomalías de las precipitaciones y temperaturas. 
 
-## *Visualizaciones planteadas* 
-
-Mapa de la región seleccionada implementado cartopy  
+## *Visualizaciones planteadas*   
 
 Gráfico lineal con el fin de visualizar la tendencia de la temperatura promedio anual de los 7 países en el periodo seleccionado.  
 
@@ -31,11 +29,13 @@ Gráfico lineal con el fin de visualizar la tendencia de la precipitación anual
 
 Histograma de la variable de precipitación. 
 
-Gráficos de correlación entre variables y el índice  
+Gráficos de correlación entre variables y el índice MEI. 
 
-Gráfico para la visualización de los valores de las Anomalías de las variables. 
+Gráfico de barras para la visualización de las anomalías de precipitación. 
 
-Dinámica de época lluviosa y seca  
+Gráfico lineal para la dinámica de época lluviosa y seca en cada país.
+
+Gráfico circular para comparar la precipitación en cada país.
 
 ## *Metodología* 
 *Datos Utilizados: URL: https://climateknowledgeportal.worldbank.org/. de:*
