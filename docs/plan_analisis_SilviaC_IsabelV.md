@@ -31,7 +31,6 @@ Presencia de anomalías de las precipitaciones y temperaturas.
 
 5. Gráfico lineal para la dinámica de época lluviosa y seca en cada país.
 
-6. Gráfico circular para comparar la precipitación en cada país.
 
 ## *Metodología* 
 *Datos Utilizados: URL: https://climateknowledgeportal.worldbank.org/. de:*
@@ -53,11 +52,15 @@ Por medio de la creación de un código en Python y usando Visual Studio Code, s
 
 ![Anomalias](Imagenes/Anomalias_precipitacion.png)
 
+De acuerdo con la gráfica de las anomalias, los valores de promedios de la precipitación no es constante, estos evidencian cambios, los cuales evidencian cambios entre los patrones a lo largo dle periodo establecido, ya sean la procencia de anomalías positivas como negativas. 
+
 ![Distribucion](Imagenes/Distribuciones_climaticas.png)
 
 ![Precipitación paises](Imagenes/Precipitación_promedio_paises.png)
 
-![Promedio temperatura](Imagenes/Promedios_temperatura_paises.png)
+De acuerdo con las gráfica de promedio de precipitación, los paises centroamericanos presentan patrones similares. Sin embargo se obterva una diferencia marcada de un aumento en el valor de la sprecipitaciones de Costa Rcia y Panamá
+
+![Promedio](Imagenes/Promedios_tempertura_paises.png)
 
 ![Temperatura promedio](Imagenes/Temperatura_Promedio.png)
 
