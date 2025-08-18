@@ -70,6 +70,8 @@ En el cual evidencia que desde noviembre del año 2018 tanto para la región cen
 De acuerdo con información del portal "Ojo del Clima", el porcentaje  de disminución alcanzó un 20% del total de lluvias para el año del 2019. De acuerdo con información suminstrada por el dirctor interino del IMN, el señor Werner Stolz: región del Valle Central y Pacífico el porcentaje es de 15-20% y Caribe un superavir de 15-20%.
 (Ojo al Clima, s.f.).
 
+## *Conclusiones*
+
 ## *Referencia*
 1. Instituto Meteorológico Nacional. (2010).Resumen Meteorológico Noviembre de 2010 (Boletín del ENOS). https://www.imn.ac.cr/documents/10179/14631/NOVIEMBRE
 2. Instituto Meteorológico Nacional. (2019). Informe 10 (Boletín del ENOS). https://www.imn.ac.cr/documents/10179/470467/%23119
