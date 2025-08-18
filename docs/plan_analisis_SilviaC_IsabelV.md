@@ -3,16 +3,13 @@
 
 ## *Preguntas para responder*  
 
-1. ¿Existe una modificación en las precipitaciones mensuales, de América Central, para el periodo seleccionado? 
+1. ¿Existe una modificación en las precipitaciones, de América Central, para el periodo seleccionado? 
 
-2. ¿Existe una modificación considerada de la temperatura sobre la región seleccionada, en el periodo de 1950 a la de 2023? 
+2. ¿Cuál es el comportamiento de los promedios de la temperatura, en cada país para el periodo de 1950-2023? 
 
-3. ¿Se evidencia una tendencia de aumento de la temperatura mínima en relación con la máxima?, se puede asociar al Cambio Climático? 
+3. ¿Se evidencia una tendencia de aumento de la temperatura mínima  con respecto a la máxima?, se puede asociar al Cambio Climático? 
 
 4. ¿Cuál año presenta mayor modificación de las variables, se debió a la influencia de algún fenómeno meteorológico asociado, para la región de América Central?
-
-5. ¿Cuál es la relación entre la precipitación mensual y el índice MEI en América Central para el periodo 1979-2023? ¿Qué indica la correlación sobre la influencia del ENOS en el régimen de lluvias en dicha zona?
-
 
 ## *Hipótesis iniciales*
 Cambio marcado entre los valores de las precipitaciones sobre la región seleccionada debido a los cambios climatológicos de la región. 
