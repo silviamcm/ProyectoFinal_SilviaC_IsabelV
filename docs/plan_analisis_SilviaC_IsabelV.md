@@ -55,6 +55,7 @@ Por medio de la creación de un código en Python y usando Visual Studio Code, s
 De acuerdo con la gráfica de las anomalias, los valores de promedios de la precipitación no es constante, estos evidencian cambios, los cuales evidencian cambios entre los patrones a lo largo dle periodo establecido, ya sean la procencia de anomalías positivas como negativas. 
 
 ![Distribucion](Imagenes/Distribuciones_climaticas.png)
+El gráfico de distribución climática muestra las distribuciones de la precipitación, temperatura máxima y temperatura mínima para el periodo 1950-2023. Para la gráfica de precipitación, se puede notar que los datos con mayor frecuencia se localizan entre 0 y 100 mm, esto indica que en la mayoría de los meses la lluvia que se registró es baja. Sin embargo, existen eventos de lluvia intensa, aunque menos frecuentes. Para la gráfica de temperatura máxima se logra observar que la distribución es más hacia el centro, lo que señala que las temperaturas máximas son relativamente estables y poseen pocas variaciones extremas. Ahora bien, para la gráfica de temperatura mínima los datos se concentran entre 20 y 23 °C, indicando temperaturas frescas y al igual que las máximas, se muestran pocos valores extremos.
 
 ![Precipitación paises](Imagenes/Precipitación_promedio_paises.png)
 
