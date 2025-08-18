@@ -53,6 +53,14 @@ Por medio de la creación de un código en Python y usando Visual Studio Code, s
 
 ![Anomalias](Imagenes/Anomalias_precipitacion.png)
 
+![Distribucion](Imagenes/Distribuciones_climaticas.png)
+
+![Precipitación paises](Imagenes/Precipitación_promedio_paises.png)
+
+![Promedio temperatura](Imagenes/Promedios_temperatura_paises.png)
+
+![Temperatura promedio](Imagenes/Temperatura_Promedio.png)
+
 
 ## *Ejemplos*
 ### Caso 1: 2010 (Fenómeno de La niña)
