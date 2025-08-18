@@ -1,4 +1,4 @@
-#Avance 5 - SilviaC e IsabelV
+#Avance 6 - SilviaC e IsabelV
 
 #Se importan las librerías necesarias
 import pandas as pd
@@ -154,7 +154,6 @@ def mostar_graficas_precipi():
     plt.ylabel('Precipitación promedio [mm]')
     plt.legend(['Belice','Guatemala','Honduras','El Salvador','Nicaragua'
     ,'Costa Rica','Panamá'])
-    plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.15), ncol=2)
     plt.grid(True)
     plt.show()
     
