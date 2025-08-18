@@ -53,10 +53,10 @@ Por medio de la creación de un código en Python y usando Visual Studio Code, s
 
 ## *Ejemplos*
 ### Caso 1: 2010 (Fenómeno de La niña)
+El año 2010 muestra una particularidad, ya que al iniciar este se encontraba en la fase cálida. A medida que fue avanzando el año, el índice ONI disminuyó, lo que indicaba que la fase de La Niña se estaba activando (NOAA, s.f).
 
+La Niña aumenta la actividad de ciclones en la cuenca del Atlántico, siendo que en el 2010 la frecuencia de ciclones tropicales tuvo un aumento. Igor fue el huracán más intenso, aunque sólo causó daños mínimos en la isla de las Bermudas. Por otro lado, en Costa Rica, el tránsito de ciclones por el mar Caribe, ocasionaron lluvias intensas en el Valle Central y el Pacífico Central. Se consideró este evento como uno de los más intensos en los últimos 30 años (Instituto Meteorológico Nacional, 2010) 
 
-(Instituto Meteorológico Nacional, s.f.)
-(NOAA, s.f.)
 
 ### Caso 2: 2019 (Fenómeno de El Niño)
 Otro ejemplo es el caso 2,  para este año se da la presencia del Fenómeno de El Niño sobre América Central, afectando directamente las precipitaciones de los paises de la región. Presentando una disminución marcada en los valores promedios, como es el caso de dos dos paises: Belice y Costa Rica.
@@ -71,7 +71,7 @@ De acuerdo con información del portal "Ojo del Clima", el porcentaje  de dismin
 (Ojo al Clima, s.f.).
 
 ## *Referencia*
-1. Instituto Meteorológico Nacional. (s.f.). La Niña se disipó (Boletín del ENOS, n.º 46). https://www.imn.ac.cr/documents/10179/28154/%23%2046
+1. Instituto Meteorológico Nacional. (2010).Resumen Meteorológico Noviembre de 2010 (Boletín del ENOS). https://www.imn.ac.cr/documents/10179/14631/NOVIEMBRE
 2. Instituto Meteorológico Nacional. (2019). Informe 10 (Boletín del ENOS). https://www.imn.ac.cr/documents/10179/470467/%23119
 3. Ministerio de Agricultura de Belice. (s.f.). Comunicado de prensa sobre la sequía. https://www.agriculture.gov.bz/drought-press-release/
 4. NOAA. (s.f.). Eventos climáticos de 2010 relacionados con El Niño o La Niña. NOAA Clima.gov. https://www.climate.gov/news-features/features/2010-climate-events-connected-el-ni%C3%B1o-or-la-ni%C3%B1a
