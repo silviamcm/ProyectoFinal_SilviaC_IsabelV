@@ -5,6 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
+
 # 1. Se realiza la carga de los datos con el uso el URL datos cargados 
 # en el GitHub
 precip = ('https://raw.githubusercontent.com/silviamcm/'
@@ -12,7 +13,6 @@ precip = ('https://raw.githubusercontent.com/silviamcm/'
 
 temp =('https://raw.githubusercontent.com/silviamcm/'
        'ProyectoFinal_SilviaC_IsabelV/refs/heads/main/data/temp.csv')
-
 
 
 #Se crean los dataframe de datos de las variables 
@@ -31,24 +31,8 @@ df_cri= df_precip[df_precip['code'].str.contains(r'CRI',case=False, na=False)]
 df_pan= df_precip[df_precip['code'].str.contains(r'PAN',case=False, na=False)]
 
 
-#Temperatura
-df_bel_temp =df_temp[df_precip['code'].str.contains(r'BLZ',case=False, 
-                                                    na=False)]
-df_guat_temp= df_precip[df_precip['code'].str.contains(r'GTM',case=False,
-                                                       na=False)]
-df_hon_temp= df_precip[df_precip['code'].str.contains(r'HND',case=False, 
-                                                      na=False)]
-df_sal_temp= df_precip[df_precip['code'].str.contains(r'SLV',case=False, 
-                                                      na=False)]
-df_nic_temp= df_precip[ df_precip['code'].str.contains(r'NIC',case=False,
-                                                       na=False)]
-df_cri_temp= df_precip[df_precip['code'].str.contains(r'CRI',case=False, 
-                                                      na=False)]
-df_pan_temp= df_precip[df_precip['code'].str.contains(r'PAN',case=False, 
-                                                      na=False)]
-
-#Creación de definiciones de funciones utilizadas dentro del codigo
-#Definción de funciones para opción 1 y menu secundario
+#Creación de definiciones de funciones utilizadas dentro del código
+#Definción de funciones para opción 1 y menú secundario
 
 def menu_secundario():
     print(f'\n------ Menú Secundario -------')
@@ -58,7 +42,7 @@ def menu_secundario():
     print(f'c: Comprobación valores nulos')
     print(f'd: identificación de los tipos de datos de las columnas')
     print(f'e: Salir ')
-    print(f'--------------------------------\n')
+    print(f'------------------------------\n')
 
 
 def valores_estadisticos():
@@ -78,8 +62,6 @@ def valores_estadisticos():
     #Información de temperaturas de la función df.info
     print(f'\n Visualización de la función .info() de temperatura')
     print(f'{df_temp.info()}')
-    # Información del MEI de la función df.info
-    print(f'\n Visualización de la función .info() del índice del MEI')
 
     
 def filas_extremas():
@@ -91,8 +73,6 @@ def filas_extremas():
     print(f'\n-Filas de Temperatura:\n')
     print(df_temp.head(11))
 
-    print(f'\n-Filas de Índice MEI:\n')
-    
 
     #Aplicación de la función df.tail el cual visualiza
     #los últimos registros, en este caso los últimos 10
@@ -101,8 +81,6 @@ def filas_extremas():
 
     print(f'\n Visualización de la función .tail() de temperatura')
     print(df_temp.tail(10))
-
-    print(f'\n Visualización de la función .tail() del índice del MEI')
     
     
 def mostrar_valores_nulos():
@@ -113,8 +91,6 @@ def mostrar_valores_nulos():
 
     print(f'\n Cantidad de valores nulos en columnas de df temperatura:')
     print(f"{df_temp.isnull().sum()}")
-
-    print(f'\n Cantidad de valores nulos en columnas de df MEI:')
    
     
 def mostrar_tipos_datos():
@@ -123,15 +99,13 @@ def mostrar_tipos_datos():
     print(df_precip.dtypes)
 
     print(f'\n-Tipos de datos en Temperatura:\n')
-    print(df_temp.dtypes)
+    print(df_temp.dtypes)   
 
-    print(f'\n-Tipos de datos en Índice MEI:\n')
-   
 
 def sub_menu():
     while True:
         menu_secundario()
-        seg_opcion = input('Por favor escriba la opcion deseada:')
+        seg_opcion = input('Por favor, escriba la opción deseada:')
         
         if seg_opcion.casefold() =="a".casefold():
             valores_estadisticos()
@@ -149,7 +123,7 @@ def sub_menu():
             print('Regresa al Menú Principal')
             break
         else:
-            print('Seleccione opción válida.')  
+            print('Seleccione una opción válida.')  
   
 
 #Definción de funciones para opción 2
@@ -183,11 +157,108 @@ def mostar_graficas_precipi():
     ,'Costa Rica','Panamá'])
     plt.grid(True)
     plt.show()
-#Tambien utilizado en la opción 2
+
+#De la columna code, se extraen los primeros 3 caracteres para crear la columna
+#país, y se utiliza fuera de la función ya que se utiliza para otra gráfica más
+#adelante
+df_temp['country'] = df_temp['code'].str[:3]
+
+#Se crea la funcion para la gráfica de promedio de la temp media, máx y mín
+def grafica_comparacion_maxmin():
+    #Se agrupa por país, luego se calculan los promedios. Se usa el reset_index
+    #debido a que country pasó a ser los índices del df entonces necesita
+    #volver a ser una columna normal
+    df_country_avg = (df_temp.groupby('country')
+                      [['temp_max', 'temp_min']].mean().reset_index())
+
+    #Aquí se va a calcular el promedio de la temp max y min y la temp media
+    df_country_avg['temp_media'] = ((df_country_avg['temp_max'] + 
+                                     df_country_avg['temp_min']) / 2)
+    prom_general = df_country_avg['temp_media'].mean()
+
+    #Se crea el gráfica de barras, la var x es paa la posición de los países en
+    #el eje x, y el width para el ancho de la barra
+    x = np.arange(len(df_country_avg['country']))
+    width = 0.35 
+
+    fig, ax = plt.subplots(figsize=(10, 6))
+
+    #Aquí se crean las barras para cada temp, y la línea punteada del promedio 
+    #general
+    ax.bar(x - width/2, df_country_avg['temp_max'], 
+           width, label='Temp Max', color='tomato')
+    ax.bar(x + width/2, df_country_avg['temp_min'], 
+           width, label='Temp Min', color='skyblue')
+    ax.axhline(prom_general, color='black', linestyle='--', linewidth=2,
+            label=f'Prom Temp Media ({prom_general:.2f}°C)')
+
+    #Características del gráfico
+    ax.set_ylabel('Temperatura (°C)')
+    ax.set_title('Promedio de Temperatura Media, Máxima y Mínima por País de '
+                 '1950 - 2023')
+    ax.set_xticks(x)
+    ax.set_xticklabels(df_country_avg['country'])
+    ax.legend(loc='center left', bbox_to_anchor=(1.0, 0.5))
+    ax.grid(axis='y', linestyle='--', alpha=0.5)
+
+    plt.tight_layout()
+    plt.show()
+
+
+def grafica_tempmaxmin_pais():
+    #Aquí agrupamos por país y año, y de una vez se calcula el promedio de las
+    #temp max y min
+    df_yearly = df_temp.groupby(['country', 'year'])[['temp_max', 
+                                            'temp_min']].mean().reset_index()
+
+    #Se grafican 9 subplots, auqnue son sólo 7 países, más adelante se borran
+    #las subplots vacías
+    fig, axs = plt.subplots(nrows=3, ncols=3, figsize=(15, 12))
+    axs = axs.flatten()
+
+    #Se usa .unique() ya que devuelve los valores únicos, en este caso los 
+    #países sin duplicados
+    paises = df_yearly['country'].unique()
+
+    #Esta var es para ordenar las subplots a conveniencia
+    posiciones = [0, 1, 2, 3, 4, 5, 7]
+
+    #Se crea este for para que grafique cada país en las posiciones deseadas
+    for idx_pais, pos_subplot in enumerate(posiciones):
+        pais = paises[idx_pais]
+        ax = axs[pos_subplot]
+
+        data_pais = df_yearly[df_yearly['country'] == pais]
+
+        ax.plot(data_pais['year'], data_pais['temp_max'], label='Temp Máxima', 
+                color='darkgreen')
+        ax.plot(data_pais['year'], data_pais['temp_min'], label='Temp Mínima', 
+                color='orange')
+
+        ax.set_title(f'País: {pais}')
+        ax.set_xlabel('Año')
+        ax.set_ylabel('Temperatura (°C)')
+        ax.legend()
+        ax.grid(True)
+
+    #Este for es para eliminar las subplots vacías de las posiciones que no se 
+    #usaron
+    for i in range(len(axs)):
+        if i not in posiciones:
+            fig.delaxes(axs[i])
+
+    fig.suptitle('Promedio Anual de la Temperatura Máxima y Mínima por País'
+                 ' (1950-2023)', fontsize=16)
     
+    #Aquí vamos a ajustar los espacios entre las subplots y el título
+    plt.tight_layout(h_pad=5, w_pad=3, rect=[0, 0, 1, 0.95])
+    plt.show()
+
+
 #Definción de funciones para opción 3
-def opcion_3():
-    #6 Visualización exploratoria básica, se coloca una división de rangos de 50
+
+def histogramas_preci_temp():
+    #Visualización exploratoria básica, se coloca una división de rangos de 50
     plt.figure(figsize=(8, 9))  # Tamaño de la figura general
 
     plt.suptitle('Distribuciones Climáticas en América Central '
@@ -219,20 +290,20 @@ def opcion_3():
     plt.show()
     
  
-#Definción de funcion para Menú Principal   
+#Definción de función para Menú Principal   
 def opcion_menu():
-    print(f'\n    Menú Principal    ')
+    print(f'\n------ Menú Principal ------')
     print(f'1. Información Básica de los DataFrame.')
     print(f'2. Visualización de Gráficas Básicas.')
-    print(f'3. visualizaciones más Complejas.')
+    print(f'3. Visualizaciones más Complejas.')
     print(f'4. Salir ')
-    print(f'------------------------\n')
+    print(f'----------------------------\n')
     
-
+#Buble para el menú principal
 while True:
     opcion_menu()
     print('Bienvenido, selección del 1 al 4')
-    opcion =int(input('Por favor escriba la opcion deseada:'))
+    opcion =int(input('Por favor, escriba la opción deseada:'))
 
     if opcion == 1:
         sub_menu()   
@@ -241,12 +312,22 @@ while True:
         print(f'Se observa la tendencia de la precipitación en A.C.')
         mostar_graficas_precipi()
         #Visualización de gráfica lineal de temperatura media en A.C. 
-        print(f'Se observa la tendencia de la precipitación en A.C.')
-        
+        print(f'Se observa el comportamiento de la temperatura máxima y mínima'
+              'respecto al promedio')
+        grafica_comparacion_maxmin()
     elif opcion == 3:
-        opcion_3() 
+        #Visualización de los histogramas para la precipitación, temperatura
+        #máxima y mínima
+        print(f'Se observa la distribución del histograma de la precipitación'
+              'y las temperaturas máximas y mínimas')
+        histogramas_preci_temp()
+        #Visualización de la gráfica lineal de temperaturas máximas y mínimas
+        #por país
+        print(f'Se observa la gráfica de la comparación del promedio de la'
+              'temperatura máxima y mínima por país')
+        grafica_tempmaxmin_pais() 
     elif opcion == 4:
+        print('¡Gracias por utilizar el programa, vuelva pronto!')
         break
     else:
-        print('Por favor, Seleccione una opción válida del menú')
-
+        print('Por favor, seleccione una opción válida del menú')
