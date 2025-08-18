@@ -59,16 +59,22 @@ Por medio de la creación de un código en Python y usando Visual Studio Code, s
 (NOAA, s.f.)
 
 ### Caso 2: 2019 (Fenómeno de El Niño)
-Otro ejemplo es el caso 2,  para este año se da la presencia del Fenómeno de El Niño sobre América Central, afectando directamente las precipitaciones de los paises de la región. Presentando una disminución marcada en los valores promedios, como es el caso de dos dos paises: Belice y Costa Rica
+Otro ejemplo es el caso 2,  para este año se da la presencia del Fenómeno de El Niño sobre América Central, afectando directamente las precipitaciones de los paises de la región. Presentando una disminución marcada en los valores promedios, como es el caso de dos dos paises: Belice y Costa Rica.
 
 Belice, preecenta afectaciones marcadas dentro de su sector agro, se de la presenia por parte del Ministerio de agricultura sobre dicho tema mediente comunicados de prensa sobre la sequia. 
 El servicio Meteorologíco  establece a el Niño como un impulsador climatologico, como se estableció para el año 2019, evidenciando una disminución de las precipitaciones en relacion con los valores normales (Ministerio de Agricultura de Belice, s.f.).
 
+Para el 2019, en el caso de Costa Rica, se establece la disminución de las precipitaciones, de acuerdo con el informe 10 del Boletín del ENOS del IMN.
+En el cual evidencia que desde noviembre del año 2018 tanto para la región centroamericana, como para la región del Mar Caribe se dan valores positivos de la anomalia, de acuerdo con el estudio de stacione y estimadores de lluvia las zonas con mayor afectación son: la Vertiente del Caribe, como la Zona Norte (donde se presentó una sequía meterologíca). Estableciendo porcentajes de lluvia menores al 55% en todo el pais de los valores normales (Instituto Meteorológico Nacional, 2019).
+
+De acuerdo con información del portal "Ojo del Clima", el porcentaje  de disminución alcanzó un 20% del total de lluvias para el año del 2019. De acuerdo con información suminstrada por el dirctor interino del IMN, el señor Werner Stolz: región del Valle Central y Pacífico el porcentaje es de 15-20% y Caribe un superavir de 15-20%.
+(Ojo al Clima, s.f.).
+
 ## *Referencia*
 1. Instituto Meteorológico Nacional. (s.f.). La Niña se disipó (Boletín del ENOS, n.º 46). https://www.imn.ac.cr/documents/10179/28154/%23%2046
-
-2. Ministerio de Agricultura de Belice. (s.f.). Comunicado de prensa sobre la sequía. https://www.agriculture.gov.bz/drought-press-release/
-
-3. NOAA. (s.f.). Eventos climáticos de 2010 relacionados con El Niño o La Niña. NOAA Clima.gov. https://www.climate.gov/news-features/features/2010-climate-events-connected-el-ni%C3%B1o-or-la-ni%C3%B1a
+2. Instituto Meteorológico Nacional. (2019). Informe 10 (Boletín del ENOS). https://www.imn.ac.cr/documents/10179/470467/%23119
+3. Ministerio de Agricultura de Belice. (s.f.). Comunicado de prensa sobre la sequía. https://www.agriculture.gov.bz/drought-press-release/
+4. NOAA. (s.f.). Eventos climáticos de 2010 relacionados con El Niño o La Niña. NOAA Clima.gov. https://www.climate.gov/news-features/features/2010-climate-events-connected-el-ni%C3%B1o-or-la-ni%C3%B1a
+5. Ojo al Clima. (s.f.). Lluvias se redujeron 20% en 2019 con El Niño moderado. Recuperado el 16 de agosto de 2025, de https://ojoalclima.com/articles/lluvias-se-redujeron-20-en-2019-con-el-nino-moderado
 
 
