@@ -1,4 +1,4 @@
-#Avance 3 - SilviaC e IsabelV
+#Avance 5 - SilviaC e IsabelV
 
 #Se importan las librerías necesarias
 import pandas as pd
@@ -149,14 +149,66 @@ def mostar_graficas_precipi():
     plt.plot(prom_anual_cri,color="r")
     plt.plot(prom_anual_pan,color="k")
 
-    plt.title('Precipitación promedio anual América Central\n'
-    'periodo de 1950-2023, datos del ')
+    plt.title('Precipitación prom anual A.C. periodo de 1950-2023')
     plt.xlabel('Año')
     plt.ylabel('Precipitación promedio [mm]')
     plt.legend(['Belice','Guatemala','Honduras','El Salvador','Nicaragua'
     ,'Costa Rica','Panamá'])
+    plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.15), ncol=2)
     plt.grid(True)
     plt.show()
+    
+#Realiza calculo de la precipitación promedio anual para América Central 
+#agregando 
+prom_anual_region = df_precip.groupby('year')['precip'].mean().reset_index()
+prom_anual_region.rename(columns={'precip': 'precip_anual'}, inplace=True)
+
+#Realiza el calculo del promedio historio de los datos, para tener un mejor
+# control de estos 
+promedio_historico = prom_anual_region['precip_anual'].mean()
+
+# Se efectua el calculo de la anomalias en el periodo utilizado
+prom_anual_region['anomalia_pct'] = (
+    (prom_anual_region['precip_anual'] - promedio_historico)/promedio_historico
+) * 100
+
+# Se establece para el establecimiento de las anomalias positivas o negativas
+positivas = prom_anual_region[prom_anual_region['anomalia_pct'] >= 0]
+negativas = prom_anual_region[prom_anual_region['anomalia_pct'] < 0]
+
+# crea el definimiento de la función para el manejo de esta dentro del código 
+def mostrar_grafica_precip_anomalias():
+	# codigo de graficación estableciendo el tamaño de la figura
+	plt.figure(figsize=(12, 6))
+
+	# Barras positivas (azul), se utiliza el tipo de grafica bar para la 
+	# visualización de las anomalias positivas, edgecolor: el borde de la barra
+	plt.bar(positivas['year'], positivas['anomalia_pct'],
+      	 color='blue', edgecolor='black')
+
+	# Barras negativas (rojo), se utiliza el tipo de grafica bar para la 
+	# visualización de las anomalias negativas
+	plt.bar(negativas['year'], negativas['anomalia_pct'],
+        color='red', edgecolor='black')
+
+	# Línea base en 0, se emplementa para colocar linea 
+	#horizontal de color negro para tener una mejor observación
+	plt.axhline(0, color='black', linestyle='--')
+
+	# Se da la modificaciones de las ditintas etiquetas utilizadas
+	# de los ejes x, y, título, 
+	plt.title('Anomalía porcentual anual de precipitación en América Central\n'
+           'Respecto al promedio histórico (1950–2023)')
+	plt.xlabel('Años')
+	plt.ylabel('Anomalía porcentual (%)')
+	plt.xticks(rotation=45)
+	#Utiliza un alpha  referente a la opacidad en el gráfico delos valores
+	# representados 
+	plt.grid(axis='y', linestyle='--', alpha=0.5)
+	#Nos permite ajustar los distintos elementos de la gráfica 
+	plt.tight_layout()
+	#Permite mostrar el grafico, para su visualización 
+	plt.show()
 
 #De la columna code, se extraen los primeros 3 caracteres para crear la columna
 #país, y se utiliza fuera de la función ya que se utiliza para otra gráfica más
@@ -198,7 +250,8 @@ def grafica_comparacion_maxmin():
                  '1950 - 2023')
     ax.set_xticks(x)
     ax.set_xticklabels(df_country_avg['country'])
-    ax.legend(loc='center left', bbox_to_anchor=(1.0, 0.5))
+    ax.legend(loc='upper center',bbox_to_anchor=(0.5, -0.15), 
+              ncol=3, frameon=False)
     ax.grid(axis='y', linestyle='--', alpha=0.5)
 
     plt.tight_layout()
@@ -315,6 +368,10 @@ while True:
         print(f'Se observa el comportamiento de la temperatura máxima y mínima'
               'respecto al promedio')
         grafica_comparacion_maxmin()
+        #Visualización de gráfica de anomalías de los valores de la 
+        #precipitación en A.C. 
+        print(f'Se visualiza la gráfica de anomalías de la precipitación')
+        mostrar_grafica_precip_anomalias()
     elif opcion == 3:
         #Visualización de los histogramas para la precipitación, temperatura
         #máxima y mínima
