@@ -51,6 +51,9 @@ Por medio de la creación de un código en Python y usando Visual Studio Code, s
 
 ## *Resultados y Análisis*
 
+![Anomalias](Imagenes/Anomalias_precipitacion.png)
+
+
 ## *Ejemplos*
 ### Caso 1: 2010 (Fenómeno de La niña)
 El año 2010 muestra una particularidad, ya que al iniciar este se encontraba en la fase cálida. A medida que fue avanzando el año, el índice ONI disminuyó, lo que indicaba que la fase de La Niña se estaba activando (NOAA, s.f).
