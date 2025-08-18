@@ -21,19 +21,17 @@ Presencia de anomalías de las precipitaciones y temperaturas.
 
 ## *Visualizaciones planteadas*   
 
-Gráfico lineal con el fin de visualizar la tendencia de la temperatura promedio anual de los 7 países en el periodo seleccionado.  
+1. Gráfico lineal con el fin de visualizar la tendencia de la temperatura promedio anual de los 7 países en el periodo seleccionado.  
 
-Gráfico lineal con el fin de visualizar la tendencia de la precipitación anual de los 7 países en el periodo seleccionado. 
+2. Gráfico lineal con el fin de visualizar la tendencia de la precipitación anual de los 7 países en el periodo seleccionado. 
 
-Histograma de la variable de precipitación. 
+3. Histograma de la variable de precipitación. 
 
-Gráficos de correlación entre variables y el índice MEI. 
+4. Gráfico de barras para la visualización de las anomalías de precipitación. 
 
-Gráfico de barras para la visualización de las anomalías de precipitación. 
+5. Gráfico lineal para la dinámica de época lluviosa y seca en cada país.
 
-Gráfico lineal para la dinámica de época lluviosa y seca en cada país.
-
-Gráfico circular para comparar la precipitación en cada país.
+6. Gráfico circular para comparar la precipitación en cada país.
 
 ## *Metodología* 
 *Datos Utilizados: URL: https://climateknowledgeportal.worldbank.org/. de:*
@@ -41,12 +39,6 @@ Gráfico circular para comparar la precipitación en cada país.
 1. Precipitación (mm) 
 2. Temperatura máxima (°C) 
 3. Temperatura mínima (°C)
-
-*Datos utilizados de: URL: https://psl.noaa.gov/enso/mei/*
-
-1. Índice del MEI (ENOS) 
-
-Mediante el uso de los datos del ERA5 de las variables de precipitación (mm), temperatura máxima (°C) y mínima (°C) para la serie de tiempo de 1950 a 2023, y de los datos de la NOAA del Índice Multivariado de El Niño Oscilación del Sur (MEI) los caules van de 1979 al 2023, se lleva a cabo un análisis de estas variables en relación con los cambios evidenciados de los valores.  
 
 Los archivos descargados del ERA5 son en formato excel y además las columnas corresponden a las fechas, por lo cual se transpusieron los datos mediante un código de python y se convirtió a csv (se agregará a anexos), se crearon dos archivos, uno que contiene las temperaturas máximas y mínimas y otro con los datos de precipitación. Entonces ahora el archivo va contener las siguientes columnas:
 1. code: código de la estación
@@ -56,3 +48,27 @@ Los archivos descargados del ERA5 son en formato excel y además las columnas co
 5. temp_min, temp_max / precip
 
 Por medio de la creación de un código en Python y usando Visual Studio Code, se va a crear un código para la visualización y graficación de los datos. Las visualizaciones serán claves para poder responder las preguntas planteadas, sin embargo, es de manera clave la búsqueda y lectura de distintos artículos científicos, con el fin de clarificar y relacionar eventos ENOS con los posibles cambios de los valores y con esto el análisis de la dinámica de América Central de las precipitaciones y temperaturas, como estas se encuentran relacionado a los agentes externos (fenómenos meteorológicos). 
+
+## *Resultados y Análisis*
+
+## *Ejemplos*
+### Caso 1: 2010 (Fenómeno de La niña)
+
+
+(Instituto Meteorológico Nacional, s.f.)
+(NOAA, s.f.)
+
+### Caso 2: 2019 (Fenómeno de El Niño)
+Otro ejemplo es el caso 2,  para este año se da la presencia del Fenómeno de El Niño sobre América Central, afectando directamente las precipitaciones de los paises de la región. Presentando una disminución marcada en los valores promedios, como es el caso de dos dos paises: Belice y Costa Rica
+
+Belice, preecenta afectaciones marcadas dentro de su sector agro, se de la presenia por parte del Ministerio de agricultura sobre dicho tema mediente comunicados de prensa sobre la sequia. 
+El servicio Meteorologíco  establece a el Niño como un impulsador climatologico, como se estableció para el año 2019, evidenciando una disminución de las precipitaciones en relacion con los valores normales (Ministerio de Agricultura de Belice, s.f.).
+
+## *Referencia*
+1. Instituto Meteorológico Nacional. (s.f.). La Niña se disipó (Boletín del ENOS, n.º 46). https://www.imn.ac.cr/documents/10179/28154/%23%2046
+
+2. Ministerio de Agricultura de Belice. (s.f.). Comunicado de prensa sobre la sequía. https://www.agriculture.gov.bz/drought-press-release/
+
+3. NOAA. (s.f.). Eventos climáticos de 2010 relacionados con El Niño o La Niña. NOAA Clima.gov. https://www.climate.gov/news-features/features/2010-climate-events-connected-el-ni%C3%B1o-or-la-ni%C3%B1a
+
+
